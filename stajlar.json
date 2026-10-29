@@ -1,0 +1,227 @@
+{
+  "fakulte": "Atatürk Üniversitesi Tıp Fakültesi",
+  "sonGuncelleme": "261029",
+  "iletisimEmail": "eren.baris.ay25@ogr.atauni.edu.tr",
+  "stajlar": [
+    {
+      "id": "d4-cocuk-cerrahisi",
+      "donem": 4,
+      "ad": "Çocuk Cerrahisi",
+      "kisaltma": "ATA4ÇC",
+      "sure": "2 Hafta",
+      "ikon": "scissors-line-dashed",
+      "slaytLink": "https://drive.google.com/drive/folders/1WiAzjYk9HmVJzM--3L3_dV4PXhuw1Gp_?usp=drive_link",
+      "notLink": "https://drive.google.com/drive/folders/1sfMpUZAZvKYKTYqFTjk7dsaX1dRSy2oP?usp=drive_link",
+      "etiketler": ["Çocuk Cerrahisi", "ÇC"]
+    },
+    {
+      "id": "d4-radyoloji",
+      "donem": 4,
+      "ad": "Radyoloji",
+      "kisaltma": "ATA4R",
+      "sure": "2 Hafta",
+      "ikon": "radiation",
+      "slaytLink": "https://drive.google.com/drive/folders/1tb-ufW8MweCep9E7cWcQMAMqbRMvkxT3?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1jfFdDM2zTOiS7mUw8C724j818Fo7hqIl?usp=drive_link",
+      "etiketler": ["Radyoloji", "Radyo", "R"]
+    },
+    {
+      "id": "d4-farmakoloji",
+      "donem": 4,
+      "ad": "Farmakoloji",
+      "kisaltma": "ATA4F",
+      "sure": "2 Hafta",
+      "ikon": "pill",
+      "slaytLink": "https://drive.google.com/drive/folders/1s4hh_uLa8hbJNHciZF3_0_QxSL1etnjP?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1_P8ZfMT_fdFEDyOrWfurLBIoxIhi--0Q?usp=sharing",
+      "etiketler": ["Farmakoloji", "Farma", "F"]
+    },
+    {
+      "id": "d4-pediatri",
+      "donem": 4,
+      "ad": "Çocuk Sağlığı ve Hastalıkları (Pediatri)",
+      "kisaltma": "ATA4ÇSH",
+      "sure": "8 Hafta",
+      "ikon": "baby",
+      "slaytLink": "https://drive.google.com/drive/folders/1Xprvb_PjzcQVLer__B2E-fECcTFMEYLx?usp=drive_link",
+      "notLink": "https://drive.google.com/drive/folders/1m2-GrVE46XO-rvdritcLZtIWZp3lEy50?usp=drive_link",
+      "etiketler": ["ÇSH", "Pediatri", "Çocuk", "PED"]
+    },
+    {
+      "id": "d4-genel-cerrahi",
+      "donem": 4,
+      "ad": "Genel Cerrahi",
+      "kisaltma": "ATA4GC",
+      "sure": "8 Hafta",
+      "ikon": "slice",
+      "slaytLink": "https://drive.google.com/drive/folders/12XmOQYlyn6aY3VHnq6YrzZNJIwP5gOTB?usp=drive_link",
+      "notLink": "https://drive.google.com/drive/folders/1epolsXQd_ubG6ws-_GY7VmdbrK_LlOMd?usp=drive_link",
+      "etiketler": ["Genel Cerrahi", "Cerrahi", "GC"]
+    },
+    {
+      "id": "d4-dahiliye",
+      "donem": 4,
+      "ad": "İç Hastalıkları (Dahiliye)",
+      "kisaltma": "ATA4İH",
+      "sure": "8 Hafta",
+      "ikon": "square-library",
+      "slaytLink": "https://drive.google.com/drive/folders/1HmfsWPU7gVq6fxULfxH4mM9mweV-uurl?usp=drive_link",
+      "notLink": "https://drive.google.com/drive/folders/1ZtWyeowAU9M5mNnAY14-2YZaow_EZK1a?usp=drive_link",
+      "etiketler": ["İH", "Dahiliye", "İç Hastalıkları", "DAH"]
+    },
+    {
+      "id": "d4-kadin-dogum",
+      "donem": 4,
+      "ad": "Kadın Hastalıkları ve Doğum",
+      "kisaltma": "ATA4KHD",
+      "sure": "8 Hafta",
+      "ikon": "venus",
+      "slaytLink": "https://drive.google.com/drive/folders/1VlhKRxlSi6YH1KO3jycVZHlkSnu-RPbQ?usp=drive_link",
+      "notLink": "https://drive.google.com/drive/folders/1Fp27Sla6fWWczU1T29SCPoImu6YJl9kW?usp=drive_link",
+      "etiketler": ["Kadın Doğum", "Obstetri", "Jinekoloji", "KHD"]
+    },
+    {
+      "id": "d5-uroloji",
+      "donem": 5,
+      "ad": "Üroloji",
+      "kisaltma": "ATA5Ü",
+      "sure": "3 Hafta",
+      "ikon": "droplets",
+      "slaytLink": "https://drive.google.com/drive/folders/15V8378UUC64pfbcslcPKgtWyjXN7ioBM?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/102xHNdJywhzouxSWDI2PgCRrlYjbvEKJ?usp=sharing",
+      "etiketler": ["Üroloji", "Ü", "Üro"]
+    },
+    {
+      "id": "d5-ortopedi",
+      "donem": 5,
+      "ad": "Ortopedi ve Travmatoloji",
+      "kisaltma": "ATA5ORT",
+      "sure": "3 Hafta",
+      "ikon": "drill",
+      "slaytLink": "https://drive.google.com/drive/folders/1Nhnb15Csu5eC1ewVUelaMuyEaAUoR2uw?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1aIjCPcuQQqIIrVlREbsWVLkLVtj-wtVs?usp=sharing",
+      "etiketler": ["Ortopedi", "ORT", "Marangoz"]
+    },
+    {
+      "id": "d5-noroloji",
+      "donem": 5,
+      "ad": "Nöroloji",
+      "kisaltma": "ATA5NÖR",
+      "sure": "3 Hafta",
+      "ikon": "brain-circuit",
+      "slaytLink": "https://drive.google.com/drive/folders/13OCb_ZzycMBvmxli3nSPYUw-lkhRwEd8?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1gxJ3564by2Ppw7M-AqF24hnxobTRa7Ah?usp=sharing",
+      "etiketler": ["Nöroloji", "Nöro", "NÖR"]
+    },
+    {
+      "id": "d5-psikiyatri",
+      "donem": 5,
+      "ad": "Ruh Sağlığı ve Hastalıkları (Psikiyatri)",
+      "kisaltma": "ATA5RSH",
+      "sure": "3 Hafta",
+      "ikon": "brain-cog",
+      "slaytLink": "https://drive.google.com/drive/folders/1hxUBe2eenbJrQuu5toqM53wl2j5qsxwt?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1fxyN7csHaqHOr-T4577AC1yqRlT9G5uu?usp=sharing",
+      "etiketler": ["Psikiyatri", "Ruh Sağlığı", "RSH"]
+    },
+    {
+      "id": "d5-anesteziyoloji-ve-reanimasyon",
+      "donem": 5,
+      "ad": "Anesteziyoloji ve Reanimasyon",
+      "kisaltma": "ATA5AR",
+      "sure": "2 Hafta",
+      "ikon": "circle-gauge",
+      "slaytLink": "https://drive.google.com/drive/folders/1gENTe_sDHq9fzKLaapBL24NZc5gzn8Tn?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/17iVHRC0HInDqQJFpvZbKrGW7o60Oi5uP?usp=sharing",
+      "etiketler": ["Anesteziyoloji ve Reanimasyon", "Anestezi", "AR"]
+    },
+    {
+      "id": "d5-beyin-ve-sinir-cerrahisi",
+      "donem": 5,
+      "ad": "Beyin ve Sinir Cerrahisi",
+      "kisaltma": "ATA5BC",
+      "sure": "2 Hafta",
+      "ikon": "brain",
+      "slaytLink": "https://drive.google.com/drive/folders/1j3Ms67QiT6za_A3Z21DqynsjgYW1LujZ?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1vAgc70wmm2DnEqaC5caqrlFdO31QjNUg?usp=sharing",
+      "etiketler": ["Beyin Cerrahi", "Malignite", "BC"]
+    },
+    {
+      "id": "d5-goz-hastalıkları",
+      "donem": 5,
+      "ad": "Göz Hastalıkları",
+      "kisaltma": "ATA5G",
+      "sure": "2 Hafta",
+      "ikon": "eye",
+      "slaytLink": "https://drive.google.com/drive/folders/1Bm1CV4mPJb1BGuvupqPyDSpulFnSIdq4?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1sSwVpKmEWLBuDWJv9Y4NPtM2RhLaz3Sa?usp=sharing",
+      "etiketler": ["Göz", "Oftalmoloji", "G"]
+    },
+    {
+      "id": "d5-kardiyoloji",
+      "donem": 5,
+      "ad": "Kardiyoloji",
+      "kisaltma": "ATA5KAR",
+      "sure": "3 Hafta",
+      "ikon": "heart-pulse",
+      "slaytLink": "https://drive.google.com/drive/folders/1NafiT4f-ltKPhVHI2mPJCeT45COMfKmW?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1xgS8KqokQ_GS5CJBe5rpWwCiYCp-ZlY_?usp=sharing",
+      "etiketler": ["Kardiyoloji", "Kardiyo", "KAR"]
+    },
+    {
+      "id": "d5-gogus-hastaliklari",
+      "donem": 5,
+      "ad": "Göğüs Hastalıkları",
+      "kisaltma": "ATA5GH",
+      "sure": "3 Hafta",
+      "ikon": "wind",
+      "slaytLink": "https://drive.google.com/drive/folders/1yaaE-elKAYefxoYUXHw09MoGJXt_9ZRh?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1BaqVqo9bdhHzDombFdfOBSTZuzG6Oy7o?usp=sharing",
+      "etiketler": ["Göğüs Hastalıkları", "Göğüs", "GH"]
+    },
+    {
+      "id": "d5-dermatoloji",
+      "donem": 5,
+      "ad": "Deri ve Zührevi Hastalıklar (Dermatoloji)",
+      "kisaltma": "ATA5D",
+      "sure": "3 Hafta",
+      "ikon": "scan-face",
+      "slaytLink": "https://drive.google.com/drive/folders/1APRbL2-RA1fmaNKHGHY0xv7ptl2lvxvf?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1kFz-GU1ToK9NAHjeHiyi8iRBwy_Dve1A?usp=sharing",
+      "etiketler": ["Dermatoloji", "Cildiye", "D", "Derma"]
+    },
+    {
+      "id": "d5-kdc",
+      "donem": 5,
+      "ad": "Kalp Damar ve Göğüs Cerrahisi",
+      "kisaltma": "ATA5KDC",
+      "sure": "3 Hafta",
+      "ikon": "heart",
+      "slaytLink": "https://drive.google.com/drive/folders/1tJfKnjdJsbUlD4xyioRJp8Q81MUjwMIo?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1NhrOOdMaGd7hhVsk2iWJqAgGItJR7arg?usp=sharing",
+      "etiketler": ["Kalp Damar Cerrahisi", "KDC", "Kalp Damar"]
+    },
+    {
+      "id": "d5-enfeksiyon-hastaliklari",
+      "donem": 5,
+      "ad": "Enfeksiyon Hastalıkları",
+      "kisaltma": "ATA5EH",
+      "sure": "3 Hafta",
+      "ikon": "germ",
+      "slaytLink": "https://drive.google.com/drive/folders/1Tf6K1GDLtTujmnsoI56YYtFHImlZGeGE?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1F3YHllh0bXqK3k4M0wHxoPBInyBv5d3l?usp=sharing",
+      "etiketler": ["Enfeksiyon Hastalıkları", "Enfeksiyon", "EH"]
+    },
+    {
+      "id": "d5-kbb",
+      "donem": 5,
+      "ad": "Kulak Burun Boğaz (KBB)",
+      "kisaltma": "ATA5KBB",
+      "sure": "2 Hafta",
+      "ikon": "ear",
+      "slaytLink": "https://drive.google.com/drive/folders/1XbPAuPJ20ukZh9quhOvYgxa1eZMJU40S?usp=sharing",
+      "notLink": "https://drive.google.com/drive/folders/1Ep6s_rXZ1CPgYRhlJXo_O4EXa7b9ayEM?usp=sharing",
+      "etiketler": ["KBB", "Kulak Burun Boğaz"]
+    }
+  ]
+}
