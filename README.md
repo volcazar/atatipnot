@@ -1,6 +1,6 @@
-# Atatürk Üniversitesi Tıp Fakültesi - 4. & 5. Sınıf Staj Notları Arşivi
+# Atatürk Üniversitesi Tıp Fakültesi Notları Arşivi
 
-Atatürk Üniversitesi Tıp Fakültesi kurumsal renkleriyle (`#0B1934` Derin Lacivert & `#C5A059` / `#D4AF37` Altın Sarısı) tasarlanmış, 4. ve 5. sınıf staj slaytları ve ders notları arşivi.
+Atatürk Üniversitesi Tıp Fakültesi kurumsal renkleriyle (`#0B1934` Derin Lacivert & `#C5A059` / `#D4AF37` Altın Sarısı) tasarlanmış, slaytlar ne notlar arşivi.
 
 ## Dosya Yapısı
 

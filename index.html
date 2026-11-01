@@ -104,9 +104,20 @@
 
       <!-- Sağ Aksiyonlar -->
       <div class="flex items-center gap-2 sm:gap-2.5">
+        <a
+          href="https://t.me/+Irp8AJp_Ot1lMDZk"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-ata-gold to-ata-goldBright text-ata-navy hover:brightness-110 shadow-xs border border-ata-goldBright/60 transition-all hover:scale-[1.02]"
+        >
+          <i data-lucide="send" class="w-3.5 h-3.5 text-ata-navy"></i>
+          <span>Katkı Yap</span>
+        </a>
+
         <a href="#sssSection" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200 hover:text-ata-goldBright hover:bg-white/5 border border-white/10 transition">
           <i data-lucide="help-circle" class="w-3.5 h-3.5 text-ata-goldBright"></i>
-          <span>SSS &amp; Dosya Kodları</span>
+          <span class="hidden md:inline">SSS &amp; Dosya Kodları</span>
+          <span class="md:hidden">SSS</span>
         </a>
 
         <button id="guideModalBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200 hover:text-ata-goldBright hover:bg-white/5 border border-white/10 transition">
@@ -176,7 +187,7 @@
 
     <!-- Sekme (Tab) Seçici -->
     <section class="flex items-center justify-center mb-10 pb-4 border-b border-slate-200/90 dark:border-ata-gold/20">
-      <div class="inline-flex p-1.5 rounded-2xl bg-slate-200/75 dark:bg-[#0D2240] border border-slate-300/60 dark:border-ata-gold/25 w-full sm:w-auto justify-center" role="tablist">
+      <div class="inline-flex flex-wrap sm:flex-nowrap p-1.5 rounded-2xl bg-slate-200/75 dark:bg-[#0D2240] border border-slate-300/60 dark:border-ata-gold/25 w-full sm:w-auto justify-center gap-1 sm:gap-0" role="tablist">
         <button
           type="button"
           role="tab"
@@ -206,6 +217,16 @@
         >
           <span>5. Sınıf</span>
           <span id="countD5" class="px-2 py-0.5 text-[11px] rounded-full bg-slate-300/70 dark:bg-ata-navy text-slate-700 dark:text-ata-goldBright">0</span>
+        </button>
+
+        <button
+          type="button"
+          role="tab"
+          data-tab="kutuphane"
+          class="tab-btn flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 dark:text-slate-300 hover:text-ata-navy dark:hover:text-ata-goldBright"
+        >
+          <i data-lucide="book-open" class="w-4 h-4"></i>
+          <span>Kütüphane</span>
         </button>
       </div>
     </section>
@@ -274,6 +295,62 @@
 
       <div id="gridDonem5" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <!-- JS ile stajlar.json'dan doldurulacak -->
+      </div>
+    </section>
+
+    <!-- Kütüphane Bölümü -->
+    <section id="sectionKutuphane" class="mb-16 hidden">
+      <div class="flex items-center gap-3.5 mb-6">
+        <div class="px-3.5 py-2 rounded-xl bg-ata-navy dark:bg-ata-gold text-ata-goldBright dark:text-ata-navy border border-ata-gold/40 font-mono font-extrabold text-sm tracking-wider shadow-xs">
+          ARŞİV
+        </div>
+        <div class="flex items-center gap-3">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-ata-navy dark:text-white tracking-tight">
+            Kütüphane
+          </h2>
+          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-ata-gold/15 text-ata-goldDark dark:text-ata-goldBright border border-ata-gold/30">
+            Özel Koleksiyon
+          </span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article
+          class="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-[#0D2240]/95 p-5 sm:p-6 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft hover:shadow-card-hover hover:-translate-y-1 hover:border-ata-gold dark:hover:border-ata-goldBright transition-all duration-200"
+        >
+          <div>
+            <!-- Kart Üst Satır: Kitap İkonu (book-open) ve Rozet -->
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <div class="w-11 h-11 rounded-xl bg-ata-navy text-ata-goldBright dark:bg-ata-navy border border-ata-gold/35 flex items-center justify-center shadow-2xs group-hover:bg-ata-gold group-hover:text-ata-navy transition-colors duration-200">
+                <i data-lucide="book-open" class="w-5 h-5"></i>
+              </div>
+
+              <div class="flex items-center gap-1.5">
+                <span class="font-mono text-xs font-bold px-2.5 py-1 rounded-lg bg-ata-navy/5 dark:bg-ata-navy text-ata-navy dark:text-ata-goldBright border border-ata-navy/10 dark:border-ata-gold/30">
+                  ATA-KÜTÜPHANE
+                </span>
+              </div>
+            </div>
+
+            <!-- Kütüphane Kart Başlığı -->
+            <h3 class="text-lg font-extrabold text-ata-navy dark:text-white group-hover:text-ata-goldDark dark:group-hover:text-ata-goldBright transition-colors mb-5 leading-snug">
+              Akademik Tıp Kütüphanesi
+            </h3>
+          </div>
+
+          <!-- Alt Tek Tam Genişlikte Buton: Kitaplığı Aç -->
+          <div class="pt-4 border-t border-slate-100 dark:border-ata-gold/15">
+            <a
+              href="https://drive.google.com/drive/folders/1ZXtpNoU4fh7xjRSFCGbJSClWLT0dD_zi?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-ata-gold to-ata-goldBright hover:brightness-105 text-ata-navy border border-ata-goldBright/60 shadow-2xs transition-all hover:scale-[1.01] focus:outline-none focus:ring-2 focus:ring-ata-gold"
+            >
+              <i data-lucide="book-open" class="w-4 h-4 text-ata-navy shrink-0"></i>
+              <span>Kitaplığı Aç</span>
+            </a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -442,7 +519,7 @@
           </button>
 
           <div class="faq-content hidden px-6 pb-6 pt-2 border-t border-slate-100 dark:border-ata-gold/15 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            Her staj kartında yer alan <strong>Slaytlar</strong> butonu ilgili stajın hoca sunumlarının bulunduğu Google Drive klasörüne; <strong>Notlar</strong> butonu ise öğrenci ders notları, yazılı/sözlü çıkmış sorular ve anamnez rehberlerinin yer aldığı Google Drive klasörüne yeni sekmede doğrudan yönlendirir.
+            Her staj kartında yer alan <strong>Slaytlar</strong> butonu ilgili stajın hoca sunumlarının bulunduğu Google Drive klasörüne; <strong>Notlar</strong> butonu ise öğrenci ders notlarının, çıkmış soruların ve anamnez rehberlerinin yer aldığı Google Drive klasörüne yeni sekmede doğrudan yönlendirir.
           </div>
         </div>
 
@@ -465,7 +542,7 @@
           </button>
 
           <div class="faq-content hidden px-6 pb-6 pt-2 border-t border-slate-100 dark:border-ata-gold/15 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            Site altyapısı tamamen dinamik olup tüm staj verilerini <code class="font-mono text-ata-navy dark:text-ata-goldBright font-semibold">stajlar.json</code> dosyasından çekmektedir. Yeni dönem temsilcileri veya gönüllü öğrenciler herhangi bir HTML/JS kodu değiştirmeden yalnızca <code class="font-mono">stajlar.json</code> içindeki <code class="font-mono">slaytLink</code> ve <code class="font-mono">notLink</code> bağlantıları güncelleyerek arşivi sürdürebilir.
+            Site altyapısı tamamen dinamik olup tüm staj verilerini <code class="font-mono text-ata-navy dark:text-ata-goldBright font-semibold">stajlar.json</code> dosyasından çekmektedir. Yeni dönem temsilcileri veya gönüllü öğrenciler herhangi bir HTML/JS kodu değiştirmeden yalnızca <code class="font-mono">stajlar.json</code> içindeki <code class="font-mono">slaytLink</code> ve <code class="font-mono">notLink</code> bağlantılarındaki Google Drive klasörlerini güncelleyerek arşivi sürdürebilir.
           </div>
         </div>
 
@@ -481,14 +558,14 @@
                 <i data-lucide="upload-cloud" class="w-5 h-5"></i>
               </div>
               <span class="text-base sm:text-lg font-bold text-ata-navy dark:text-white group-hover:text-ata-goldDark dark:group-hover:text-ata-goldBright transition-colors">
-                Arşive Yeni Çıkmış Soru veya Ders Notu Nasıl Eklenir?
+                Arşive Yeni Slaytlar veya Notlar Nasıl Eklenir?
               </span>
             </div>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-ata-gold transition-transform duration-200 shrink-0"></i>
           </button>
 
           <div class="faq-content hidden px-6 pb-6 pt-2 border-t border-slate-100 dark:border-ata-gold/15 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            Hazırladığınız ders notlarını, güncel staj çıkmışlarını veya eksik slaytları yukarıdaki <strong>Dosya İsimlendirme Sistemi</strong> formatına uygun şekilde adlandırarak aşağıdaki iletişim e-posta adresine gönderebilirsiniz.
+            Hazırladığınız ders notlarını, güncel staj çıkmışlarını veya eksik slaytları yukarıdaki <strong>Dosya İsimlendirme Sistemi</strong> formatına uygun şekilde adlandırarak aşağıdaki iletişim e-posta adresine mail üzerinden veya yukarıdaki katkı yap butonuna tıklayıp telegram grubumuza katılarak telegram üzerinden gönderebilirsiniz.
           </div>
         </div>
 
@@ -696,12 +773,17 @@
 
       const sectionD4 = document.getElementById('sectionDonem4');
       const sectionD5 = document.getElementById('sectionDonem5');
+      const sectionKutuphane = document.getElementById('sectionKutuphane');
       const gridD4 = document.getElementById('gridDonem4');
       const gridD5 = document.getElementById('gridDonem5');
       const emptyState = document.getElementById('emptyState');
 
+      const kutuphaneSearchable = normalizeText('Akademik Tıp Kütüphanesi Kütüphane Kitaplık Arşiv Kitap ATA-KÜTÜPHANE');
+      const matchesKutuphane = !normalizedQuery || kutuphaneSearchable.includes(normalizedQuery);
+
       const showD4 = (activeTab === 'all' || activeTab === '4') && d4Stajlar.length > 0;
       const showD5 = (activeTab === 'all' || activeTab === '5') && d5Stajlar.length > 0;
+      const showKutuphane = activeTab === 'kutuphane' ? matchesKutuphane : (activeTab === 'all' && matchesKutuphane);
 
       if (showD4) {
         sectionD4.classList.remove('hidden');
@@ -719,8 +801,16 @@
         gridD5.innerHTML = '';
       }
 
+      if (sectionKutuphane) {
+        if (showKutuphane) {
+          sectionKutuphane.classList.remove('hidden');
+        } else {
+          sectionKutuphane.classList.add('hidden');
+        }
+      }
+
       // Boş durum kontrolü
-      if (!showD4 && !showD5) {
+      if (!showD4 && !showD5 && !showKutuphane) {
         emptyState.classList.remove('hidden');
       } else {
         emptyState.classList.add('hidden');
@@ -752,12 +842,14 @@
       const emptyState = document.getElementById('emptyState');
       const sectionD4 = document.getElementById('sectionDonem4');
       const sectionD5 = document.getElementById('sectionDonem5');
+      const sectionKutuphane = document.getElementById('sectionKutuphane');
 
       loadingState.classList.remove('hidden');
       errorState.classList.add('hidden');
       emptyState.classList.add('hidden');
       sectionD4.classList.add('hidden');
       sectionD5.classList.add('hidden');
+      if (sectionKutuphane) sectionKutuphane.classList.add('hidden');
 
       try {
         const response = await fetch(`./stajlar.json?t=${Date.now()}`, { cache: 'no-store' });
