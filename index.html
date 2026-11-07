@@ -86,16 +86,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
       <!-- Sol Logo & Başlık -->
       <a href="#" class="flex items-center gap-3 group focus:outline-none">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-ata-goldBright to-ata-goldDark p-[1.5px] shadow-sm group-hover:scale-105 transition-transform">
-          <div class="w-full h-full rounded-[10px] bg-ata-navy flex items-center justify-center text-ata-goldBright">
-            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
-          </div>
-        </div>
+          <img src="atatıp.png" alt="Atatürk Üniversitesi Logo" style="width: 48px; height: 48px; min-width: 48px;" class="rounded-full object-contain">
         <div>
           <div class="flex items-center gap-2">
             <span class="font-extrabold text-sm sm:text-base tracking-tight text-white">ATA TIP</span>
-            <span class="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-ata-gold/20 text-ata-goldBright border border-ata-gold/40">
-              Staj Arşivi
             </span>
           </div>
           <p class="text-[11px] text-slate-300 hidden sm:block">Atatürk Üniversitesi Tıp Fakültesi</p>
@@ -111,18 +105,18 @@
           class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-ata-gold to-ata-goldBright text-ata-navy hover:brightness-110 shadow-xs border border-ata-goldBright/60 transition-all hover:scale-[1.02]"
         >
           <i data-lucide="send" class="w-3.5 h-3.5 text-ata-navy"></i>
-          <span>Katkı Yap</span>
+          <span>Katkı</span>
         </a>
 
         <a href="#sssSection" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200 hover:text-ata-goldBright hover:bg-white/5 border border-white/10 transition">
           <i data-lucide="help-circle" class="w-3.5 h-3.5 text-ata-goldBright"></i>
-          <span class="hidden md:inline">SSS &amp; Dosya Kodları</span>
+          <span class="hidden md:inline">SSS</span>
           <span class="md:hidden">SSS</span>
         </a>
 
         <button id="guideModalBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200 hover:text-ata-goldBright hover:bg-white/5 border border-white/10 transition">
           <i data-lucide="file-json" class="w-3.5 h-3.5 text-ata-goldBright"></i>
-          <span class="hidden sm:inline">JSON Rehberi</span>
+          <span class="hidden sm:inline">JSON</span>
         </button>
 
         <button id="themeToggleBtn" type="button" aria-label="Temayı Değiştir" class="p-2 rounded-lg text-slate-200 hover:text-ata-goldBright hover:bg-white/5 border border-white/10 transition">
@@ -140,7 +134,7 @@
     <section class="max-w-3xl mx-auto text-center mb-10">
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-ata-navy/5 dark:bg-ata-gold/10 border border-ata-gold/35 text-xs font-semibold text-ata-navy dark:text-ata-goldBright mb-4">
         <span class="w-2 h-2 rounded-full bg-ata-goldBright"></span>
-        <span id="academicYearBadge">Atatürk Üniversitesi Tıp Fakültesi • 4. &amp; 5. Sınıf</span>
+        <span id="academicYearBadge">Ata Tıp</span>
       </div>
 
       <h1 id="facultyTitle" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-ata-navy dark:text-white leading-tight mb-7">
@@ -156,7 +150,7 @@
           id="searchInput"
           type="search"
           autocomplete="off"
-          placeholder="Staj adı veya kısaltma ara... (Örn: Dahiliye, Kardiyoloji, ATA5ORT, Göz)"
+          placeholder="Staj adı veya kısaltma"
           class="w-full pl-12 pr-24 py-4 rounded-2xl bg-white dark:bg-[#0D2240]/90 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-400 border border-slate-200 dark:border-ata-gold/25 shadow-soft focus:outline-none focus:ring-4 focus:ring-ata-gold/20 focus:border-ata-gold text-sm sm:text-base transition-all"
         />
         <div class="absolute inset-y-0 right-0 pr-3 flex items-center gap-1.5">
@@ -173,16 +167,6 @@
         </div>
       </div>
 
-      <!-- Hızlı Filtre Etiketleri -->
-      <div class="flex flex-wrap items-center justify-center gap-2 mt-4 text-xs">
-        <span class="text-slate-400 dark:text-slate-400 font-medium">Hızlı Erişim:</span>
-        <button type="button" data-quick-search="Dahiliye" class="quick-tag px-2.5 py-1 rounded-full bg-white dark:bg-[#0D2240] border border-slate-200 dark:border-ata-gold/25 text-ata-navy dark:text-slate-200 hover:border-ata-gold hover:text-ata-goldDark dark:hover:text-ata-goldBright transition">Dahiliye</button>
-        <button type="button" data-quick-search="Pediatri" class="quick-tag px-2.5 py-1 rounded-full bg-white dark:bg-[#0D2240] border border-slate-200 dark:border-ata-gold/25 text-ata-navy dark:text-slate-200 hover:border-ata-gold hover:text-ata-goldDark dark:hover:text-ata-goldBright transition">Pediatri</button>
-        <button type="button" data-quick-search="Genel Cerrahi" class="quick-tag px-2.5 py-1 rounded-full bg-white dark:bg-[#0D2240] border border-slate-200 dark:border-ata-gold/25 text-ata-navy dark:text-slate-200 hover:border-ata-gold hover:text-ata-goldDark dark:hover:text-ata-goldBright transition">Genel Cerrahi</button>
-        <button type="button" data-quick-search="Kadın Doğum" class="quick-tag px-2.5 py-1 rounded-full bg-white dark:bg-[#0D2240] border border-slate-200 dark:border-ata-gold/25 text-ata-navy dark:text-slate-200 hover:border-ata-gold hover:text-ata-goldDark dark:hover:text-ata-goldBright transition">Kadın Doğum</button>
-        <button type="button" data-quick-search="Kardiyoloji" class="quick-tag px-2.5 py-1 rounded-full bg-white dark:bg-[#0D2240] border border-slate-200 dark:border-ata-gold/25 text-ata-navy dark:text-slate-200 hover:border-ata-gold hover:text-ata-goldDark dark:hover:text-ata-goldBright transition">Kardiyoloji</button>
-        <button type="button" data-quick-search="Nöroloji" class="quick-tag px-2.5 py-1 rounded-full bg-white dark:bg-[#0D2240] border border-slate-200 dark:border-ata-gold/25 text-ata-navy dark:text-slate-200 hover:border-ata-gold hover:text-ata-goldDark dark:hover:text-ata-goldBright transition">Nöroloji</button>
-      </div>
     </section>
 
     <!-- Sekme (Tab) Seçici -->
@@ -400,7 +384,7 @@
                 <i data-lucide="file-code-2" class="w-5 h-5"></i>
               </div>
               <span class="text-base sm:text-lg font-bold text-ata-navy dark:text-white group-hover:text-ata-goldDark dark:group-hover:text-ata-goldBright transition-colors">
-                Dosya İsimlendirme Sistemi Nasıl Çalışır?
+                Dosya İsimlendirme Formatı Nedir?
               </span>
             </div>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-ata-gold transition-transform duration-200 rotate-180 shrink-0"></i>
@@ -445,17 +429,24 @@
                     <td class="py-3 px-4 font-mono font-bold text-ata-navy dark:text-ata-goldBright align-top">Staj Kısaltmaları</td>
                     <td class="py-3 px-4 leading-relaxed">
                       <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">BC</strong> (Beyin cerrahisi)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">D</strong> (Dermatoloji)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">EH</strong> (Enfeksiyon)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">G</strong> (Göz)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">GH</strong> (Göğüs)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">İH</strong> (İç hastalıkları - Dahiliye)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">ÇSH</strong> (Çocuk sağlığı ve hastalıkları - Pediatri)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">GC</strong> (Genel cerrahi)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">F</strong> (Farmakoloji)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">R</strong> (Radyoloji)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">ÇC</strong> (Çocuk cerrahisi)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">BC</strong> (Beyin ve sinir cerrahisi)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">D</strong> (Deri ve zührevi hastalıklar - Dermatoloji)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">EH</strong> (Enfeksiyon hastalıkları)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">G</strong> (Göz hastalıkları)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">GH</strong> (Göğüs hastalıkları)</span>
                         <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">KAR</strong> (Kardiyoloji)</span>
                         <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">KBB</strong> (Kulak burun boğaz)</span>
                         <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">KDC</strong> (Kalp damar cerrahisi)</span>
                         <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">NÖR</strong> (Nöroloji)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">ORT</strong> (Ortopedi)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">RSH</strong> (Psikiyatri)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">ORT</strong> (Ortopedi ve travmatoloji)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">RSH</strong> (Ruh sağlığı ve hastalıkları - Psikiyatri)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">AR</strong> (Anesteziyoloji ve reanimasyon)</span>
                         <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Ü</strong> (Üroloji) vb.</span>
                       </div>
                     </td>
@@ -465,14 +456,19 @@
                     <td class="py-3 px-4 leading-relaxed">
                       <div class="flex flex-wrap gap-1.5">
                         <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Ç</strong> (Sözlü çıkmışı)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Ço</strong> (Cevaplı sözlü)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Çx</strong> (Cevapsız sözlü)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Y</strong> (Yazılı çıkmışları)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Yo</strong> (Cevaplı yazılı)</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Yx</strong> (Cevapsız yazılı)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Ço</strong> (Cevaplı sözlü çıkmışı)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Çx</strong> (Cevapsız sözlü çıkmışı)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Çok</strong> (Konularına göre sınıflandırılmış cevaplı sözlü çıkmışı)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Çoh</strong> (Hocalarına göre sınıflandırılmış cevaplı sözlü çıkmışı)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Çxk</strong> (Konularına göre sınıflandırılmış cevapsız sözlü çıkmışı)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Çxh</strong> (Hocalarına göre sınıflandırılmış cevapsz sözlü çıkmışı)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Y</strong> (Yazılı çıkmışı)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Yo</strong> (Cevaplı yazılı çıkmışı)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Yx</strong> (Cevapsız yazılı çıkmışı)</span>
                         <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">S</strong> (Slayt)</span>
                         <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">N</strong> (Not)</span>
                         <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">Z</strong> (Anamnez)</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-ata-navy/80 border border-slate-200 dark:border-ata-gold/20"><strong class="font-mono">B</strong> (Program)</span>
                       </div>
                     </td>
                   </tr>
@@ -480,7 +476,9 @@
                     <td class="py-3 px-4 font-mono font-bold text-ata-navy dark:text-ata-goldBright align-top">Sene / Grup</td>
                     <td class="py-3 px-4">
                       <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">(23-26)</code>,
-                      <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">(23-24)</code> vb.
+                      <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">(23-24)</code>,
+                      <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">(24-25)</code>,
+                      <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">(25-26)</code> vb.
                     </td>
                   </tr>
                   <tr>
@@ -491,6 +489,7 @@
                       <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">[FK]</code>,
                       <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">[RÖ]</code>,
                       <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">[EH]</code>,
+                      <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">[SÇ]</code>,
                       <code class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-ata-navy font-mono">[G]</code> vb.
                     </td>
                   </tr>
@@ -542,7 +541,7 @@
           </button>
 
           <div class="faq-content hidden px-6 pb-6 pt-2 border-t border-slate-100 dark:border-ata-gold/15 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            Site altyapısı tamamen dinamik olup tüm staj verilerini <code class="font-mono text-ata-navy dark:text-ata-goldBright font-semibold">stajlar.json</code> dosyasından çekmektedir. Yeni dönem temsilcileri veya gönüllü öğrenciler herhangi bir HTML/JS kodu değiştirmeden yalnızca <code class="font-mono">stajlar.json</code> içindeki <code class="font-mono">slaytLink</code> ve <code class="font-mono">notLink</code> bağlantılarındaki Google Drive klasörlerini güncelleyerek arşivi sürdürebilir.
+            Site altyapısı tamamen dinamik olup tüm staj verilerini <code class="font-mono text-ata-navy dark:text-ata-goldBright font-semibold">stajlar.json</code> dosyasından çekmektedir. Yeni dönem temsilcileri veya gönüllü öğrenciler herhangi bir HTML/JS kodu değiştirmeden yalnızca Google Drive klasörlerindeki belgeleri güncelleyerek arşivi sürdürebilir.
           </div>
         </div>
 
@@ -565,7 +564,7 @@
           </button>
 
           <div class="faq-content hidden px-6 pb-6 pt-2 border-t border-slate-100 dark:border-ata-gold/15 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            Hazırladığınız ders notlarını, güncel staj çıkmışlarını veya eksik slaytları yukarıdaki <strong>Dosya İsimlendirme Sistemi</strong> formatına uygun şekilde adlandırarak aşağıdaki iletişim e-posta adresine mail üzerinden veya yukarıdaki katkı yap butonuna tıklayıp telegram grubumuza katılarak telegram üzerinden gönderebilirsiniz.
+            Hazırladığınız ders notlarını, güncel staj çıkmışlarını veya eksik slaytları yukarıdaki <strong>Dosya İsimlendirme Sistemi</strong> formatına uygun şekilde adlandırarak aşağıdaki iletişim e-posta adresine mail üzerinden veya yukarıdaki "Katkı" butonuna tıklayıp telegram grubumuza katılarak telegram üzerinden gönderebilirsiniz.
           </div>
         </div>
 
