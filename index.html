@@ -25,19 +25,19 @@
           },
           colors: {
             ata: {
-              navy: '#0B1934',
-              navyLight: '#0D2240',
-              navySoft: '#163159',
-              navyMuted: '#1E3A68',
-              gold: '#C5A059',
-              goldBright: '#D4AF37',
-              goldLight: '#F6EFE0',
-              goldDark: '#9A7836'
+              navy: '#2A2362',
+              navyLight: '#342C74',
+              navySoft: '#3E3586',
+              navyMuted: '#4A4098',
+              gold: '#C19A58',
+              goldBright: '#CFA968',
+              goldLight: '#F7F1E5',
+              goldDark: '#9E7B3E'
             }
           },
           boxShadow: {
-            'soft': '0 4px 20px -2px rgba(11, 25, 52, 0.06), 0 2px 6px -1px rgba(11, 25, 52, 0.04)',
-            'card-hover': '0 16px 32px -6px rgba(11, 25, 52, 0.14), 0 4px 12px -2px rgba(197, 160, 89, 0.18)',
+            'soft': '0 4px 20px -2px rgba(42, 35, 98, 0.06), 0 2px 6px -1px rgba(42, 35, 98, 0.04)',
+            'card-hover': '0 16px 32px -6px rgba(42, 35, 98, 0.16), 0 4px 12px -2px rgba(193, 154, 88, 0.20)',
           }
         }
       }
@@ -48,19 +48,19 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
-    /* Atatürk Üniversitesi Kurumsal Lacivert & Altın Arka Plan Dokusu */
+    /* Atatürk Üniversitesi Kurumsal İndigo (#2A2362) & Altın (#C19A58) Arka Plan Dokusu */
     body {
       background-color: #f8f9fc;
       background-image:
-        radial-gradient(at 0% 0%, rgba(11, 25, 52, 0.06) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(197, 160, 89, 0.09) 0px, transparent 50%);
+        radial-gradient(at 0% 0%, rgba(42, 35, 98, 0.07) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(193, 154, 88, 0.10) 0px, transparent 50%);
       background-attachment: fixed;
     }
     html.dark body {
-      background-color: #071022;
+      background-color: #161233;
       background-image:
-        radial-gradient(at 0% 0%, rgba(13, 34, 64, 0.55) 0px, transparent 55%),
-        radial-gradient(at 100% 0%, rgba(197, 160, 89, 0.10) 0px, transparent 45%);
+        radial-gradient(at 0% 0%, rgba(52, 44, 116, 0.55) 0px, transparent 55%),
+        radial-gradient(at 100% 0%, rgba(193, 154, 88, 0.12) 0px, transparent 45%);
     }
     /* Özel kaydırma çubuğu */
     ::-webkit-scrollbar {
@@ -71,26 +71,25 @@
       background: transparent;
     }
     ::-webkit-scrollbar-thumb {
-      background: rgba(197, 160, 89, 0.45);
+      background: rgba(193, 154, 88, 0.45);
       border-radius: 9999px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: rgba(197, 160, 89, 0.75);
+      background: rgba(193, 154, 88, 0.75);
     }
   </style>
 </head>
 <body class="text-slate-800 dark:text-slate-100 antialiased selection:bg-ata-gold selection:text-ata-navy min-h-screen flex flex-col transition-colors duration-300">
 
-  <!-- Üst Kurumsal Navigasyon Çubuğu -->
-  <header class="sticky top-0 z-30 backdrop-blur-md bg-[#0B1934]/95 dark:bg-[#071022]/95 border-b border-ata-gold/25 text-white shadow-md">
+  <!-- Üst Kurumsal Navigasyon Çubuğu (Akıllı Navbar: Aşağı kaydırınca gizlenir, yukarı kaydırınca belirir) -->
+  <header id="mainHeader" class="sticky top-0 z-30 backdrop-blur-md bg-[#2A2362]/95 dark:bg-[#1E1949]/95 border-b border-ata-gold/25 text-white shadow-md transition-transform duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
       <!-- Sol Logo & Başlık -->
       <a href="#" class="flex items-center gap-3 group focus:outline-none">
-          <img src="ata.png" alt="Atatürk Üniversitesi Logo" style="width: 48px; height: 48px; min-width: 48px;" class="rounded-full object-contain">
+          <img src="atatıp.png" alt="Atatürk Üniversitesi Logo" style="width: 48px; height: 48px; min-width: 48px;" class="rounded-full object-contain">
         <div>
           <div class="flex items-center gap-2">
             <span class="font-extrabold text-sm sm:text-base tracking-tight text-white">ATA TIP</span>
-            </span>
           </div>
           <p class="text-[11px] text-slate-300 hidden sm:block">Atatürk Üniversitesi Tıp Fakültesi</p>
         </div>
@@ -98,14 +97,15 @@
 
       <!-- Sağ Aksiyonlar -->
       <div class="flex items-center gap-2 sm:gap-2.5">
+        <!-- İSTEK VE ŞİKAYET GOOGLE FORM LİNKİ: href değerini kendi Google Form bağlantınızla değiştirebilirsiniz -->
         <a
-          href="https://t.me/+Irp8AJp_Ot1lMDZk"
+          href="https://forms.gle/Pp9t9YRMTJEx9mJb6"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-gradient-to-r from-ata-gold to-ata-goldBright text-ata-navy hover:brightness-110 shadow-xs border border-ata-goldBright/60 transition-all hover:scale-[1.02]"
         >
-          <i data-lucide="send" class="w-3.5 h-3.5 text-ata-navy"></i>
-          <span>Katkı</span>
+          <i data-lucide="message-square-plus" class="w-3.5 h-3.5 text-ata-navy"></i>
+          <span>İstek ve Şikayet</span>
         </a>
 
         <a href="#sssSection" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200 hover:text-ata-goldBright hover:bg-white/5 border border-white/10 transition">
@@ -113,11 +113,6 @@
           <span class="hidden md:inline">SSS</span>
           <span class="md:hidden">SSS</span>
         </a>
-
-        <button id="guideModalBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-200 hover:text-ata-goldBright hover:bg-white/5 border border-white/10 transition">
-          <i data-lucide="file-json" class="w-3.5 h-3.5 text-ata-goldBright"></i>
-          <span class="hidden sm:inline">JSON</span>
-        </button>
 
         <button id="themeToggleBtn" type="button" aria-label="Temayı Değiştir" class="p-2 rounded-lg text-slate-200 hover:text-ata-goldBright hover:bg-white/5 border border-white/10 transition">
           <i data-lucide="moon" class="w-4 h-4 block dark:hidden"></i>
@@ -131,13 +126,10 @@
   <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20">
 
 <!-- Üst Başlık ve Arama Bölümü -->
-<section class="max-w-3xl mx-auto text-center mb-10">
+<section class="max-w-3xl mx-auto text-center mb-6">
 
-    <div class="flex flex-col items-center justify-center gap-2 mb-7">
-        <img src="ata2.png" alt="Atatürk Üniversitesi" style="height: 120px; max-width: 90%;" class="w-auto object-contain">
-        <h1 id="facultyTitle" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-ata-goldDark via-ata-gold to-ata-goldBright">Tıp Fakültesi</span>
-        </h1>
+    <div class="flex flex-col items-center justify-center mb-7">
+        <img src="atatıp.png" alt="Atatürk Üniversitesi" style="height: 120px; max-width: 90%;" class="w-auto object-contain">
     </div>
 
       <!-- Arama Çubuğu (Search Bar) -->
@@ -150,7 +142,7 @@
           type="search"
           autocomplete="off"
           placeholder="Staj adı veya kısaltma"
-          class="w-full pl-12 pr-24 py-4 rounded-2xl bg-white dark:bg-[#0D2240]/90 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-400 border border-slate-200 dark:border-ata-gold/25 shadow-soft focus:outline-none focus:ring-4 focus:ring-ata-gold/20 focus:border-ata-gold text-sm sm:text-base transition-all"
+          class="w-full pl-12 pr-24 py-4 rounded-2xl bg-white dark:bg-[#342C74]/90 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-300 border border-slate-200 dark:border-ata-gold/25 shadow-soft focus:outline-none focus:ring-4 focus:ring-ata-gold/20 focus:border-ata-gold text-sm sm:text-base transition-all"
         />
         <div class="absolute inset-y-0 right-0 pr-3 flex items-center gap-1.5">
           <button
@@ -160,33 +152,29 @@
           >
             Temizle
           </button>
-          <kbd class="hidden sm:inline-flex items-center px-2 py-1 text-[11px] font-mono font-medium text-slate-400 dark:text-slate-400 bg-slate-50 dark:bg-ata-navy border border-slate-200 dark:border-ata-gold/20 rounded-md">
-            /
-          </kbd>
+          <span class="inline-flex items-center px-2.5 py-1 text-xs font-semibold text-ata-navy dark:text-ata-goldBright bg-ata-gold/15 dark:bg-ata-navy border border-ata-gold/30 rounded-lg select-none pointer-events-none">
+            Ara
+          </span>
+        </div>
+      </div>
+
+      <!-- SON GÜNCELLEME / DUYURU ŞERİDİ: Aşağıdaki duyuru metnini elle kolayca güncelleyebilirsiniz -->
+      <div class="max-w-2xl mx-auto mt-4">
+        <div class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-white/90 dark:bg-[#342C74]/80 border border-ata-gold/35 shadow-2xs text-xs sm:text-sm text-ata-navy dark:text-slate-100">
+          <span>📢 <strong class="font-bold text-ata-navy dark:text-ata-goldBright">Son Güncelleme:</strong> ATA5AR güncellendi (10.11.2026 - 23:30)</span>
         </div>
       </div>
 
     </section>
 
-    <!-- Sekme (Tab) Seçici -->
+    <!-- Sekme (Tab / Akordeon) Seçici: Varsayılan olarak hiçbir sekme açık değildir -->
     <section class="flex items-center justify-center mb-10 pb-4 border-b border-slate-200/90 dark:border-ata-gold/20">
-      <div class="inline-flex flex-wrap sm:flex-nowrap p-1.5 rounded-2xl bg-slate-200/75 dark:bg-[#0D2240] border border-slate-300/60 dark:border-ata-gold/25 w-full sm:w-auto justify-center gap-1 sm:gap-0" role="tablist">
-        <button
-          type="button"
-          role="tab"
-          data-tab="all"
-          class="tab-btn flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-ata-navy text-white dark:bg-ata-gold dark:text-ata-navy shadow-xs"
-        >
-          <i data-lucide="layers" class="w-4 h-4"></i>
-          <span>Tümü</span>
-          <span id="countAll" class="px-2 py-0.5 text-[11px] rounded-full bg-white/15 dark:bg-ata-navy/20 text-ata-goldBright dark:text-ata-navy font-extrabold">0</span>
-        </button>
-
+      <div class="inline-flex flex-wrap sm:flex-nowrap p-1.5 rounded-2xl bg-slate-200/75 dark:bg-[#342C74] border border-slate-300/60 dark:border-ata-gold/25 w-full sm:w-auto justify-center gap-1 sm:gap-1" role="tablist">
         <button
           type="button"
           role="tab"
           data-tab="4"
-          class="tab-btn whitespace-nowrap flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 dark:text-slate-300 hover:text-ata-navy dark:hover:text-ata-goldBright"
+          class="tab-btn whitespace-nowrap flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 dark:text-slate-200 hover:text-ata-navy dark:hover:text-ata-goldBright"
         >
           <span>4. Sınıf</span>
           <span id="countD4" class="px-2 py-0.5 text-[11px] rounded-full bg-slate-300/70 dark:bg-ata-navy text-slate-700 dark:text-ata-goldBright">0</span>
@@ -196,7 +184,7 @@
           type="button"
           role="tab"
           data-tab="5"
-          class="tab-btn whitespace-nowrap flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 dark:text-slate-300 hover:text-ata-navy dark:hover:text-ata-goldBright"
+          class="tab-btn whitespace-nowrap flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 dark:text-slate-200 hover:text-ata-navy dark:hover:text-ata-goldBright"
         >
           <span>5. Sınıf</span>
           <span id="countD5" class="px-2 py-0.5 text-[11px] rounded-full bg-slate-300/70 dark:bg-ata-navy text-slate-700 dark:text-ata-goldBright">0</span>
@@ -206,7 +194,7 @@
           type="button"
           role="tab"
           data-tab="kutuphane"
-          class="tab-btn whitespace-nowrap flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 dark:text-slate-300 hover:text-ata-navy dark:hover:text-ata-goldBright"
+          class="tab-btn whitespace-nowrap flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 dark:text-slate-200 hover:text-ata-navy dark:hover:text-ata-goldBright"
         >
           <i data-lucide="book-open" class="w-4 h-4"></i>
           <span>Kütüphane</span>
@@ -223,7 +211,7 @@
     </div>
 
     <!-- Hata Durumu (stajlar.json yüklenemezse gösterilir) -->
-    <div id="errorState" class="hidden py-12 px-6 text-center max-w-xl mx-auto rounded-2xl bg-white dark:bg-[#0D2240] border border-red-300 dark:border-red-500/40 shadow-soft my-6">
+    <div id="errorState" class="hidden py-12 px-6 text-center max-w-xl mx-auto rounded-2xl bg-white dark:bg-[#342C74] border border-red-300 dark:border-red-500/40 shadow-soft my-6">
       <div class="w-14 h-14 rounded-2xl bg-red-500/10 text-red-600 dark:text-red-400 flex items-center justify-center mx-auto mb-4">
         <i data-lucide="alert-triangle" class="w-7 h-7"></i>
       </div>
@@ -299,7 +287,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <article
-          class="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-[#0D2240]/95 p-5 sm:p-6 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft hover:shadow-card-hover hover:-translate-y-1 hover:border-ata-gold dark:hover:border-ata-goldBright transition-all duration-200"
+          class="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-[#342C74]/95 p-5 sm:p-6 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft hover:shadow-card-hover hover:-translate-y-1 hover:border-ata-gold dark:hover:border-ata-goldBright transition-all duration-200"
         >
           <div>
             <!-- Kart Üst Satır: Kitap İkonu (book-open) ve Rozet -->
@@ -321,16 +309,26 @@
             </h3>
           </div>
 
-          <!-- Alt Tek Tam Genişlikte Buton: Kitaplığı Aç -->
-          <div class="pt-4 border-t border-slate-100 dark:border-ata-gold/15">
+          <!-- Alt Butonlar: Kitaplığı Aç & Katkı -->
+          <div class="grid grid-cols-3 gap-2 pt-4 border-t border-slate-100 dark:border-ata-gold/15">
             <a
               href="https://drive.google.com/drive/folders/1ZXtpNoU4fh7xjRSFCGbJSClWLT0dD_zi?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-ata-gold to-ata-goldBright hover:brightness-105 text-ata-navy border border-ata-goldBright/60 shadow-2xs transition-all hover:scale-[1.01] focus:outline-none focus:ring-2 focus:ring-ata-gold"
+              class="col-span-2 inline-flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-ata-gold to-ata-goldBright hover:brightness-105 text-ata-navy border border-ata-goldBright/60 shadow-2xs transition-all hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-ata-gold"
             >
               <i data-lucide="book-open" class="w-4 h-4 text-ata-navy shrink-0"></i>
               <span>Kitaplığı Aç</span>
+            </a>
+
+            <a
+              href="https://t.me/+Irp8AJp_Ot1lMDZk"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="col-span-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-2.5 rounded-xl text-xs sm:text-sm font-bold bg-ata-navy/10 hover:bg-ata-navy text-ata-navy hover:text-ata-goldBright dark:bg-ata-navy dark:hover:bg-ata-navySoft dark:text-ata-goldBright border border-ata-navy/20 dark:border-ata-gold/35 shadow-2xs transition-all hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-ata-gold"
+            >
+              <i data-lucide="send" class="w-3.5 h-3.5 shrink-0"></i>
+              <span>Katkı</span>
             </a>
           </div>
         </article>
@@ -344,7 +342,7 @@
       </div>
       <h3 class="text-lg font-bold text-ata-navy dark:text-white mb-1">Aradığınız kriterlere uygun staj bulunamadı</h3>
       <p class="text-sm text-slate-500 dark:text-slate-400 mb-5">
-        Farklı bir staj adı/kısaltması deneyebilir veya filtreyi sıfırlayabilirsiniz.
+        Farklı bir staj adı/kısaltması deneyebilir veya aramayı temizleyebilirsiniz.
       </p>
       <button
         id="resetFiltersBtn"
@@ -352,7 +350,7 @@
         class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold bg-ata-navy hover:bg-ata-navyLight text-ata-goldBright border border-ata-gold/40 shadow-xs transition"
       >
         <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
-        Tüm Stajları Göster
+        Aramayı Temizle
       </button>
     </div>
 
@@ -372,7 +370,7 @@
       <div class="space-y-4">
 
         <!-- Soru 1: Dosya İsimlendirme Sistemi Nasıl Çalışır? -->
-        <div class="faq-item rounded-2xl bg-white dark:bg-[#0D2240]/90 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft overflow-hidden transition-all">
+        <div class="faq-item rounded-2xl bg-white dark:bg-[#342C74]/90 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft overflow-hidden transition-all">
           <button
             type="button"
             class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none group"
@@ -499,7 +497,7 @@
         </div>
 
         <!-- Soru 2 -->
-        <div class="faq-item rounded-2xl bg-white dark:bg-[#0D2240]/90 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft overflow-hidden transition-all">
+        <div class="faq-item rounded-2xl bg-white dark:bg-[#342C74]/90 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft overflow-hidden transition-all">
           <button
             type="button"
             class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none group"
@@ -522,7 +520,7 @@
         </div>
 
         <!-- Soru 3 -->
-        <div class="faq-item rounded-2xl bg-white dark:bg-[#0D2240]/90 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft overflow-hidden transition-all">
+        <div class="faq-item rounded-2xl bg-white dark:bg-[#342C74]/90 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft overflow-hidden transition-all">
           <button
             type="button"
             class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none group"
@@ -545,7 +543,7 @@
         </div>
 
         <!-- Soru 4 -->
-        <div class="faq-item rounded-2xl bg-white dark:bg-[#0D2240]/90 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft overflow-hidden transition-all">
+        <div class="faq-item rounded-2xl bg-white dark:bg-[#342C74]/90 border border-slate-200/90 dark:border-ata-gold/30 shadow-soft overflow-hidden transition-all">
           <button
             type="button"
             class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none group"
@@ -568,99 +566,26 @@
         </div>
 
       </div>
-
-      <!-- İletişim ve Not Gönderimi Kartı -->
-      <div class="mt-8 rounded-2xl bg-gradient-to-r from-ata-navy via-ata-navyLight to-ata-navySoft p-6 sm:p-8 border border-ata-gold/40 shadow-lg text-white flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div class="flex items-start sm:items-center gap-4 text-center sm:text-left flex-col sm:flex-row">
-          <div class="w-12 h-12 rounded-2xl bg-ata-gold/20 border border-ata-gold/40 text-ata-goldBright flex items-center justify-center shrink-0 mx-auto sm:mx-0">
-            <i data-lucide="mail-plus" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-lg sm:text-xl font-extrabold text-white tracking-tight">
-              İletişim ve Not Gönderimi
-            </h3>
-            <p class="text-xs sm:text-sm text-slate-300 mt-1">
-              Güncel çıkmış sorularınızı, ders notlarınızı veya kırık link bildirimlerinizi e-posta ile iletebilirsiniz.
-            </p>
-          </div>
-        </div>
-
-        <a
-          id="contactEmailBtn"
-          href="mailto:ornek@atauni.edu.tr?subject=ATA%20TIP%20Staj%20Ar%C5%9Fivi%20-%20Not%20%2F%20%C3%87%C4%B1km%C4%B1%C5%9F%20G%C3%B6nderimi"
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-ata-gold to-ata-goldBright text-ata-navy hover:brightness-110 shadow-md transition-all shrink-0"
-        >
-          <i data-lucide="send" class="w-4 h-4"></i>
-          <span id="contactEmailText">ornek@atauni.edu.tr</span>
-        </a>
-      </div>
     </section>
 
   </main>
 
   <!-- Alt Bilgi (Footer) -->
-  <footer class="border-t border-slate-200/80 dark:border-ata-gold/20 bg-white/80 dark:bg-[#071022]/90 backdrop-blur-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
-      <div class="flex items-center gap-2.5">
-        <span class="w-2 h-2 rounded-full bg-ata-gold"></span>
-        <span><strong class="text-ata-navy dark:text-white">Atatürk Üniversitesi Tıp Fakültesi</strong> </span>
-      </div>
-      <div class="flex items-center gap-4">
-        <span>Veri Kaynağı: <code class="font-mono text-ata-navy dark:text-ata-goldBright bg-slate-100 dark:bg-ata-navyLight px-1.5 py-0.5 rounded border border-slate-200 dark:border-ata-gold/25">stajlar.json</code></span>
-        <span id="lastUpdatedFooter" class="hidden sm:inline"></span>
-      </div>
+  <footer class="border-t border-ata-gold/30 bg-[#2A2362] dark:bg-[#1E1949] text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+      <p class="text-xs sm:text-sm text-slate-200/90 leading-relaxed">
+        Bu platform herhangi bir resmi kuruma veya Atatürk Üniversitesi'ne bağlı değildir. Öğrenciler arasında yardımlaşma ve eğitim materyallerine erişimi kolaylaştırma amacıyla gönüllü tıp öğrencileri tarafından bağımsız olarak geliştirilmiştir.
+      </p>
     </div>
   </footer>
-
-  <!-- JSON Güncelleme Rehberi Modalı -->
-  <div id="guideModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-ata-navy/75 backdrop-blur-xs">
-    <div class="bg-white dark:bg-[#0D2240] border border-slate-200 dark:border-ata-gold/40 rounded-2xl max-w-xl w-full p-6 shadow-2xl relative">
-      <div class="flex items-start justify-between gap-4 mb-4">
-        <div class="flex items-center gap-2.5">
-          <div class="w-9 h-9 rounded-xl bg-ata-navy text-ata-goldBright border border-ata-gold/30 flex items-center justify-center">
-            <i data-lucide="file-json" class="w-5 h-5"></i>
-          </div>
-          <div>
-            <h3 class="text-base font-bold text-ata-navy dark:text-white">Staj Linkleri Nasıl Güncellenir?</h3>
-            <p class="text-xs text-slate-500 dark:text-slate-300">Sadece <code class="font-mono">stajlar.json</code> dosyasını düzenleyin</p>
-          </div>
-        </div>
-        <button id="closeGuideModalBtn" type="button" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
-
-      <div class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-200 leading-relaxed">
-        <p>
-          Tüm staj kartları proje klasöründeki <strong><code class="font-mono text-ata-navy dark:text-ata-goldBright">stajlar.json</code></strong> dosyasından otomatik olarak çekilir. Her staj için <code class="font-mono">slaytLink</code> ve <code class="font-mono">notLink</code> alanlarını güncellemeniz yeterlidir:
-        </p>
-        <div class="p-3.5 rounded-xl bg-[#071022] text-slate-100 border border-ata-gold/30 font-mono text-xs overflow-x-auto leading-relaxed">
-<pre>{
-  "id": "d4-dahiliye",
-  "donem": 4,
-  "ad": "İç Hastalıkları (Dahiliye)",
-  "kisaltma": "ATA4DAH",
-  "sure": "8 Hafta",
-  "ikon": "activity",
-  "slaytLink": "https://drive.google.com/drive/folders/...",
-  "notLink": "https://drive.google.com/drive/folders/..."
-}</pre>
-        </div>
-      </div>
-
-      <div class="mt-6 flex justify-end">
-        <button id="closeGuideModalBottomBtn" type="button" class="px-4 py-2 rounded-xl text-xs font-bold bg-ata-navy dark:bg-ata-gold text-ata-goldBright dark:text-ata-navy hover:opacity-90 transition">
-          Anlaşıldı, Kapat
-        </button>
-      </div>
-    </div>
-  </div>
 
   <!-- Uygulama Scripti -->
   <script>
     // Uygulama Durumu (State) — Veriler yalnızca stajlar.json dosyasından dinamik olarak çekilir
+    // Varsayılan olarak sayfa ilk açıldığında hiçbir sekme/liste açık değildir (activeTab = null)
+    const DEFAULT_KATKI_URL = 'https://t.me/+Irp8AJp_Ot1lMDZk';
     let allStajlar = [];
-    let activeTab = 'all'; // 'all' | '4' | '5'
+    let activeTab = null; // null | '4' | '5' | 'kutuphane'
     let searchQuery = '';
 
     // Türkçe karakter duyarsız arama normalizasyonu
@@ -678,18 +603,19 @@
         .trim();
     }
 
-    // Sadeleştirilmiş & Çift Butonlu ("Slaytlar" ve "Notlar") Staj Kartı Oluşturucu
+    // Üç Butonlu ("Slaytlar", "Notlar" ve "Katkı") Staj Kartı Oluşturucu
     function createStajCard(staj) {
       const donemNo = staj.donem || staj.sinif || 4;
       const iconName = staj.ikon || 'folder-open';
       const slaytUrl = staj.slaytLink || staj.driveLink || '#';
       const notUrl = staj.notLink || staj.driveLink || '#';
+      const katkiUrl = (staj.katki_url && staj.katki_url.trim() !== '') ? staj.katki_url.trim() : DEFAULT_KATKI_URL;
       const kisaltma = staj.kisaltma || staj.kod || `ATA${donemNo}`;
       const stajAdi = staj.ad || staj.isim || staj.baslik || '';
 
       return `
         <article
-          class="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-[#0D2240]/95 p-5 sm:p-6 border border-slate-200/90 dark:border-ata-gold/25 shadow-soft hover:shadow-card-hover hover:-translate-y-1 hover:border-ata-gold dark:hover:border-ata-goldBright transition-all duration-200"
+          class="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-[#342C74]/95 p-5 sm:p-6 border border-slate-200/90 dark:border-ata-gold/25 shadow-soft hover:shadow-card-hover hover:-translate-y-1 hover:border-ata-gold dark:hover:border-ata-goldBright transition-all duration-200"
         >
           <div>
             <!-- Kart Üst Satır: İkon, Kısaltma Kodu ve Süre Rozeti -->
@@ -717,15 +643,15 @@
             </h3>
           </div>
 
-          <!-- Alt Çift Buton: Slaytlar & Notlar -->
-          <div class="grid grid-cols-2 gap-2.5 pt-4 border-t border-slate-100 dark:border-ata-gold/15">
+          <!-- Alt Üçlü Buton: Slaytlar, Notlar & Katkı -->
+          <div class="grid grid-cols-3 gap-2 pt-4 border-t border-slate-100 dark:border-ata-gold/15">
             <a
               href="${slaytUrl}"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold bg-ata-navy hover:bg-ata-navySoft text-white dark:bg-ata-navy dark:hover:bg-ata-navyMuted dark:text-slate-100 border border-ata-navy dark:border-ata-gold/30 shadow-2xs transition-all hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-ata-gold"
+              class="inline-flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-xs font-bold bg-ata-navy hover:bg-ata-navySoft text-white dark:bg-ata-navy dark:hover:bg-ata-navyMuted dark:text-slate-100 border border-ata-navy dark:border-ata-gold/30 shadow-2xs transition-all hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-ata-gold"
             >
-              <i data-lucide="presentation" class="w-4 h-4 text-ata-goldBright shrink-0"></i>
+              <i data-lucide="presentation" class="w-3.5 h-3.5 text-ata-goldBright shrink-0"></i>
               <span>Slaytlar</span>
             </a>
 
@@ -733,17 +659,27 @@
               href="${notUrl}"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-ata-gold to-ata-goldBright hover:brightness-105 text-ata-navy border border-ata-goldBright/60 shadow-2xs transition-all hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-ata-gold"
+              class="inline-flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-xs font-bold bg-gradient-to-r from-ata-gold to-ata-goldBright hover:brightness-105 text-ata-navy border border-ata-goldBright/60 shadow-2xs transition-all hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-ata-gold"
             >
-              <i data-lucide="file-text" class="w-4 h-4 text-ata-navy shrink-0"></i>
+              <i data-lucide="file-text" class="w-3.5 h-3.5 text-ata-navy shrink-0"></i>
               <span>Notlar</span>
+            </a>
+
+            <a
+              href="${katkiUrl}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-xs font-bold bg-ata-navy/10 hover:bg-ata-navy text-ata-navy hover:text-ata-goldBright dark:bg-ata-navy dark:hover:bg-ata-navySoft dark:text-ata-goldBright border border-ata-navy/20 dark:border-ata-gold/35 shadow-2xs transition-all hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-ata-gold"
+            >
+              <i data-lucide="send" class="w-3.5 h-3.5 shrink-0"></i>
+              <span>Katkı</span>
             </a>
           </div>
         </article>
       `;
     }
 
-    // Stajları Filtrele ve Ekrana Çiz
+    // Stajları Filtrele ve Ekrana Çiz (Varsayılan olarak kapalı akordeon yapısı)
     function renderStajlar() {
       const normalizedQuery = normalizeText(searchQuery);
 
@@ -762,12 +698,15 @@
       const d5Stajlar = matchingStajlar.filter(s => Number(s.donem || s.sinif) === 5);
 
       // Sayaçları güncelle
-      document.getElementById('countAll').textContent = matchingStajlar.length;
-      document.getElementById('countD4').textContent = d4Stajlar.length;
-      document.getElementById('countD5').textContent = d5Stajlar.length;
+      const countD4El = document.getElementById('countD4');
+      const countD5El = document.getElementById('countD5');
+      const badgeD4El = document.getElementById('badgeD4Count');
+      const badgeD5El = document.getElementById('badgeD5Count');
 
-      document.getElementById('badgeD4Count').textContent = `${d4Stajlar.length} Staj`;
-      document.getElementById('badgeD5Count').textContent = `${d5Stajlar.length} Staj`;
+      if (countD4El) countD4El.textContent = d4Stajlar.length;
+      if (countD5El) countD5El.textContent = d5Stajlar.length;
+      if (badgeD4El) badgeD4El.textContent = `${d4Stajlar.length} Staj`;
+      if (badgeD5El) badgeD5El.textContent = `${d5Stajlar.length} Staj`;
 
       const sectionD4 = document.getElementById('sectionDonem4');
       const sectionD5 = document.getElementById('sectionDonem5');
@@ -779,9 +718,21 @@
       const kutuphaneSearchable = normalizeText('Akademik Tıp Kütüphanesi Kütüphane Kitaplık Arşiv Kitap ATA-KÜTÜPHANE');
       const matchesKutuphane = !normalizedQuery || kutuphaneSearchable.includes(normalizedQuery);
 
-      const showD4 = (activeTab === 'all' || activeTab === '4') && d4Stajlar.length > 0;
-      const showD5 = (activeTab === 'all' || activeTab === '5') && d5Stajlar.length > 0;
-      const showKutuphane = activeTab === 'kutuphane' ? matchesKutuphane : (activeTab === 'all' && matchesKutuphane);
+      let showD4 = false;
+      let showD5 = false;
+      let showKutuphane = false;
+
+      if (normalizedQuery) {
+        // Arama yapılıyorsa: bir sekme seçiliyse o sekmede, seçili değilse eşleşen tüm bölümlerde göster
+        showD4 = (!activeTab || activeTab === '4') && d4Stajlar.length > 0;
+        showD5 = (!activeTab || activeTab === '5') && d5Stajlar.length > 0;
+        showKutuphane = (!activeTab || activeTab === 'kutuphane') && matchesKutuphane;
+      } else {
+        // Arama yoksa: yalnızca aktif olan sekmenin (4, 5 veya kutuphane) içeriğini göster; activeTab === null ise hepsi kapalı
+        showD4 = activeTab === '4' && d4Stajlar.length > 0;
+        showD5 = activeTab === '5' && d5Stajlar.length > 0;
+        showKutuphane = activeTab === 'kutuphane';
+      }
 
       if (showD4) {
         sectionD4.classList.remove('hidden');
@@ -807,8 +758,9 @@
         }
       }
 
-      // Boş durum kontrolü
-      if (!showD4 && !showD5 && !showKutuphane) {
+      // Boş durum kontrolü (Sadece arama yapıldığında veya seçili sekmede hiç sonuç olmadığında göster; tüm sekmeler kapalıyken gizle)
+      const isAnyFilterActive = Boolean(normalizedQuery) || activeTab !== null;
+      if (isAnyFilterActive && !showD4 && !showD5 && !showKutuphane) {
         emptyState.classList.remove('hidden');
       } else {
         emptyState.classList.add('hidden');
@@ -825,9 +777,9 @@
       tabButtons.forEach(btn => {
         const tabValue = btn.getAttribute('data-tab');
         if (tabValue === activeTab) {
-          btn.className = 'tab-btn flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-ata-navy text-white dark:bg-ata-gold dark:text-ata-navy shadow-xs';
+          btn.className = 'tab-btn whitespace-nowrap flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-ata-navy text-white dark:bg-ata-gold dark:text-ata-navy shadow-xs';
         } else {
-          btn.className = 'tab-btn flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 dark:text-slate-300 hover:text-ata-navy dark:hover:text-ata-goldBright';
+          btn.className = 'tab-btn whitespace-nowrap flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 dark:text-slate-200 hover:text-ata-navy dark:hover:text-ata-goldBright';
         }
       });
     }
@@ -859,17 +811,6 @@
         if (Array.isArray(data)) {
           allStajlar = data;
         } else if (data && typeof data === 'object') {
-          if (data.sonGuncelleme) {
-            document.getElementById('academicYearBadge').textContent = `${data.fakulte || 'Atatürk Üniversitesi Tıp Fakültesi'} • ${data.sonGuncelleme}`;
-            const footerUpdate = document.getElementById('lastUpdatedFooter');
-            footerUpdate.textContent = `Güncelleme: ${data.sonGuncelleme}`;
-          }
-          if (data.iletisimEmail) {
-            const emailBtn = document.getElementById('contactEmailBtn');
-            const emailText = document.getElementById('contactEmailText');
-            emailBtn.href = `mailto:${data.iletisimEmail}?subject=ATA%20TIP%20Staj%20Ar%C5%9Fivi%20-%20Not%20%2F%20%C3%87%C4%B1km%C4%B1%C5%9F%20G%C3%B6nderimi`;
-            emailText.textContent = data.iletisimEmail;
-          }
           allStajlar = Array.isArray(data.stajlar) ? data.stajlar : [];
         } else {
           allStajlar = [];
@@ -917,6 +858,24 @@
       });
     }
 
+    // Akıllı Navbar (Aşağı kaydırınca gizle, yukarı kaydırınca göster)
+    function initSmartNavbar() {
+      const header = document.getElementById('mainHeader');
+      if (!header) return;
+
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 64) {
+          header.classList.add('-translate-y-full');
+        } else if (currentScrollY < lastScrollY || currentScrollY <= 10) {
+          header.classList.remove('-translate-y-full');
+        }
+        lastScrollY = currentScrollY;
+      }, { passive: true });
+    }
+
     // SSS Akordeon Yönetimi
     function initFaqAccordion() {
       const triggers = document.querySelectorAll('.faq-trigger');
@@ -937,7 +896,9 @@
     // Olay Dinleyicileri (Event Listeners)
     document.addEventListener('DOMContentLoaded', () => {
       initTheme();
+      initSmartNavbar();
       initFaqAccordion();
+      updateTabUI();
       loadStajData();
 
       const searchInput = document.getElementById('searchInput');
@@ -979,54 +940,23 @@
         }
       });
 
-      // Hızlı Etiket Butonları
-      document.querySelectorAll('.quick-tag').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const term = btn.getAttribute('data-quick-search');
-          searchInput.value = term;
-          searchQuery = term;
-          clearSearchBtn.classList.remove('hidden');
-          activeTab = 'all';
-          updateTabUI();
-          renderStajlar();
-        });
-      });
-
-      // Sekme Değiştirme
+      // Sekme Değiştirme (Akordeon / Toggle: Seçili butona tekrar basılırsa kapanır)
       document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-          activeTab = btn.getAttribute('data-tab');
+          const clickedTab = btn.getAttribute('data-tab');
+          activeTab = (activeTab === clickedTab) ? null : clickedTab;
           updateTabUI();
           renderStajlar();
         });
       });
 
-      // Tüm Filtreleri Sıfırla
+      // Aramayı / Filtreyi Sıfırla
       resetFiltersBtn.addEventListener('click', () => {
         searchInput.value = '';
         searchQuery = '';
         clearSearchBtn.classList.add('hidden');
-        activeTab = 'all';
         updateTabUI();
         renderStajlar();
-      });
-
-      // JSON Rehber Modalı
-      const guideModal = document.getElementById('guideModal');
-      const openModal = () => {
-        guideModal.classList.remove('hidden');
-        guideModal.classList.add('flex');
-      };
-      const closeModal = () => {
-        guideModal.classList.add('hidden');
-        guideModal.classList.remove('flex');
-      };
-
-      document.getElementById('guideModalBtn').addEventListener('click', openModal);
-      document.getElementById('closeGuideModalBtn').addEventListener('click', closeModal);
-      document.getElementById('closeGuideModalBottomBtn').addEventListener('click', closeModal);
-      guideModal.addEventListener('click', (e) => {
-        if (e.target === guideModal) closeModal();
       });
 
       if (window.lucide) {
